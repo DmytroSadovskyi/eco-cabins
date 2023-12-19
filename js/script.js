@@ -15,7 +15,7 @@ const readMoreBtn = document.querySelector('.materials__button');
 const infoSection = document.querySelector('.page__info');
 
 readMoreBtn.addEventListener('click', () => {
-  scrollTo({
+  window.scroll({
     left: 0,
     top: infoSection.offsetTop - headerHeight,
     behavior: 'smooth',
