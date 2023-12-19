@@ -1,0 +1,25 @@
+.innovative {
+  background-color: #222f33;
+  padding: 4.5rem 0px 5rem 0px;
+}
+
+.innovative__title:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.innovative__text {
+  columns: 2 15.625rem;
+  gap: 2.6875rem;
+  line-height: 185.714%;
+  color: #fff;
+}
+
+.innovative__text p:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 47.9988em) {
+  .innovative {
+    padding: 1.875rem 0px;
+  }
+}

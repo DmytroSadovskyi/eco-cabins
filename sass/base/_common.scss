@@ -1,0 +1,41 @@
+body {
+  font-family: Rubik, sans-serif;
+  font-size: 0.875rem;
+  background-color: #ffffff;
+  color: #646d70;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+  display: flex;
+  flex-direction: column;
+}
+
+.page {
+  flex: 1 1 auto;
+}
+
+[class*='__container'] {
+  max-width: 52.5rem;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: Merriweather, serif;
+  font-size: 1.875rem;
+  color: #ffffff;
+  line-height: 130%;
+}
+
+@media (max-width: 47.9988em) {
+  .title {
+    font-size: 1.5rem;
+  }
+}
+
+.title--dark {
+  color: #222f33;
+}

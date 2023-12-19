@@ -1,0 +1,144 @@
+.materials {
+  position: relative;
+  z-index: 2;
+}
+
+.materials__container {
+  padding-bottom: 1.25rem;
+  position: relative;
+  z-index: 4;
+  display: grid;
+  grid-template-columns: 50% minmax(17.5rem, 20.3125rem);
+  gap: 1.25rem;
+  justify-content: space-between;
+  align-items: start;
+  min-width: 0;
+}
+
+.materials__content {
+  padding-top: 1.5625rem;
+  display: grid;
+  gap: 0.8125rem;
+  justify-items: start;
+}
+
+.materials__text {
+  color: #646d70;
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 185.714%;
+}
+
+.materials__button {
+  padding: 0.625rem 0.875rem;
+  color: #606b74;
+
+  font-family: Rubik;
+  font-size: 0.75rem;
+
+  font-weight: 500;
+  line-height: normal;
+
+  border-radius: 0.25rem;
+  border: 1px solid #646d70;
+}
+
+.materials__slider {
+  transform: translate(0, -20.77%);
+}
+
+.slider-materials {
+  position: relative;
+}
+
+.slider-materials__slide {
+  position: relative;
+  aspect-ratio: 325 / 366;
+}
+
+.slider-materials__slide img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.slider-materials__pagination {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0 0.3125rem 1rem 0.3125rem;
+}
+
+.slider-materials__pagination .swiper-pagination-bullet {
+  height: 0.5rem;
+  flex: 0 0 0.5rem;
+  background-color: #fff;
+  opacity: 0.4;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.slider-materials__pagination .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+.swiper {
+  overflow: hidden;
+}
+
+.swiper-initialized {
+  touch-action: pan-y;
+}
+
+.swiper-wrapper {
+  display: flex;
+  box-sizing: content-box;
+}
+
+.swiper-slide {
+  flex-shrink: 0;
+}
+
+@media (min-width: 47.9988em) {
+  .materials::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 61.7%;
+    height: 2.3125rem;
+    background-color: #fff;
+    transform: translate(0px, -100%);
+  }
+
+  .materials::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 38.8%;
+    height: 8.6875rem;
+    background-color: #222f33;
+  }
+}
+
+@media (max-width: 47.9988em) {
+  .materials__container {
+    grid-template-columns: auto;
+  }
+
+  .materials__slider {
+    transform: translate(0, 0);
+  }
+}
