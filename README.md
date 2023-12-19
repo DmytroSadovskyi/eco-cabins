@@ -1,4 +1,4 @@
-#EcoCabins
+# EcoCabins
 
 This is a simple landing page for practice in css(flex and grid).
 
