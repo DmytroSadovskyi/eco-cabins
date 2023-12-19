@@ -356,6 +356,13 @@ body {
   line-height: normal;
   border-radius: 0.25rem;
   border: 1px solid #646d70;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.materials__button:hover, .materials__button:focus {
+  color: #fff;
+  background-color: #646d70;
+  border: none;
 }
 
 .materials__slider {

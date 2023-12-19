@@ -42,6 +42,14 @@
 
   border-radius: 0.25rem;
   border: 1px solid #646d70;
+  transition: all 0.3s;
+
+  &:hover,
+  &:focus {
+    color: #fff;
+    background-color: #646d70;
+    border: none;
+  }
 }
 
 .materials__slider {
